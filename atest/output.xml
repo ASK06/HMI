@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.0 on win32)" generated="2024-01-30T14:55:36.005315" rpa="false" schemaversion="5">
+<suite id="s1" name="Compare" source="C:\Users\u201532\Development\HAT\New folder (4)\HMI_Web_App\atest\Compare.robot">
+<test id="s1-t1" name="Compare two different Beach images" line="10">
+<kw name="Run Keyword And Expect Error" owner="BuiltIn">
+<kw name="Compare Images">
+<msg time="2024-01-30T14:55:36.039895" level="FAIL">No keyword with name 'Compare Images' found.</msg>
+<arg>${TESTDATA}/Beach_left.jpg</arg>
+<arg>${TESTDATA}/Beach_right.jpg</arg>
+<status status="FAIL" start="2024-01-30T14:55:36.039837" elapsed="0.000058">No keyword with name 'Compare Images' found.</status>
+</kw>
+<msg time="2024-01-30T14:55:36.039895" level="FAIL">Expected error 'The compared images are different.' but got 'No keyword with name 'Compare Images' found.'.</msg>
+<arg>The compared images are different.</arg>
+<arg>Compare Images</arg>
+<arg>${TESTDATA}/Beach_left.jpg</arg>
+<arg>${TESTDATA}/Beach_right.jpg</arg>
+<doc>Runs the keyword and checks that the expected error occurred.</doc>
+<status status="FAIL" start="2024-01-30T14:55:36.038749" elapsed="0.001146">Expected error 'The compared images are different.' but got 'No keyword with name 'Compare Images' found.'.</status>
+</kw>
+<status status="FAIL" start="2024-01-30T14:55:36.037991" elapsed="0.001904">Expected error 'The compared images are different.' but got 'No keyword with name 'Compare Images' found.'.</status>
+</test>
+<test id="s1-t2" name="Compare two different Farm images" line="13">
+<kw name="Run Keyword And Expect Error" owner="BuiltIn">
+<kw name="Compare Images">
+<msg time="2024-01-30T14:55:36.043003" level="FAIL">No keyword with name 'Compare Images' found.</msg>
+<arg>${TESTDATA}/Farm_left.jpg</arg>
+<arg>${TESTDATA}/Farm_right.jpg</arg>
+<status status="FAIL" start="2024-01-30T14:55:36.043003" elapsed="0.000000">No keyword with name 'Compare Images' found.</status>
+</kw>
+<msg time="2024-01-30T14:55:36.043003" level="FAIL">Expected error 'The compared images are different.' but got 'No keyword with name 'Compare Images' found.'.</msg>
+<arg>The compared images are different.</arg>
+<arg>Compare Images</arg>
+<arg>${TESTDATA}/Farm_left.jpg</arg>
+<arg>${TESTDATA}/Farm_right.jpg</arg>
+<doc>Runs the keyword and checks that the expected error occurred.</doc>
+<status status="FAIL" start="2024-01-30T14:55:36.041916" elapsed="0.001087">Expected error 'The compared images are different.' but got 'No keyword with name 'Compare Images' found.'.</status>
+</kw>
+<status status="FAIL" start="2024-01-30T14:55:36.041916" elapsed="0.002227">Expected error 'The compared images are different.' but got 'No keyword with name 'Compare Images' found.'.</status>
+</test>
+<test id="s1-t3" name="Compare two equal Beach images" line="16">
+<kw name="Compare Images">
+<msg time="2024-01-30T14:55:36.046214" level="FAIL">No keyword with name 'Compare Images' found.</msg>
+<arg>${TESTDATA}/Beach_left.jpg</arg>
+<arg>${TESTDATA}/Beach_left.jpg</arg>
+<status status="FAIL" start="2024-01-30T14:55:36.046214" elapsed="0.000000">No keyword with name 'Compare Images' found.</status>
+</kw>
+<status status="FAIL" start="2024-01-30T14:55:36.045141" elapsed="0.002206">No keyword with name 'Compare Images' found.</status>
+</test>
+<test id="s1-t4" name="Compare two different Beach images with mask" line="19">
+<kw name="Compare Images">
+<msg time="2024-01-30T14:55:36.049374" level="FAIL">No keyword with name 'Compare Images' found.</msg>
+<arg>${TESTDATA}/image2.jpg</arg>
+<arg>${TESTDATA}/image1.jpg</arg>
+<arg>placeholder_file=${TESTDATA}/area_mask.json</arg>
+<status status="FAIL" start="2024-01-30T14:55:36.049374" elapsed="0.000000">No keyword with name 'Compare Images' found.</status>
+</kw>
+<status status="FAIL" start="2024-01-30T14:55:36.048345" elapsed="0.002028">No keyword with name 'Compare Images' found.</status>
+</test>
+<status status="FAIL" start="2024-01-30T14:55:36.008646" elapsed="0.042823"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="4" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="4" skip="0" id="s1" name="Compare">Compare</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-01-30T14:55:36.028074" level="ERROR">Error in file 'C:\Users\u201532\Development\HAT\New folder (4)\HMI_Web_App\atest\Compare.robot' on line 2: Importing library 'ImageCompare' failed: ModuleNotFoundError: No module named 'ImageCompare'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\u201532\Development\HAT\New folder (4)\HMI_Web_App\venv\Scripts\robot.exe
+  C:\Users\u201532\AppData\Local\Programs\Python\Python312\python312.zip
+  C:\Users\u201532\AppData\Local\Programs\Python\Python312\DLLs
+  C:\Users\u201532\AppData\Local\Programs\Python\Python312\Lib
+  C:\Users\u201532\AppData\Local\Programs\Python\Python312
+  C:\Users\u201532\Development\HAT\New folder (4)\HMI_Web_App\venv
+  C:\Users\u201532\Development\HAT\New folder (4)\HMI_Web_App\venv\Lib\site-packages</msg>
+</errors>
+</robot>

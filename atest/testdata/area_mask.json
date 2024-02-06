@@ -1,0 +1,23 @@
+[
+    {
+    "page": 1,
+    "name": "Top Rectangle",
+    "type": "coordinates",
+    "x": 400,
+    "y": 0,
+    "height": 30,
+    "width": 50,
+    "unit": "px"
+    },
+    {
+    "page": 1,
+    "name": "Top Rectangle",
+    "type": "coordinates",
+    "x": 685,
+    "y": 0,
+    "height": 30,
+    "width": 100,
+    "unit": "px"
+    }
+]
+

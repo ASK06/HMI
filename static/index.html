@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HMI Device Controller</title>
+<!--    <link rel="icon" type="image/x-icon" href="data:image/x-icon;,">-->
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/favicon.png') }}">
+<!--    <link rel="stylesheet" href="{{ url_for('static', filename='newstyles.css') }}">-->
+<!--    <link rel="stylesheet" href="stylesheet.css">-->
+    <link rel="stylesheet" href="newstyles.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles.css">
+</head>
+
+<body>
+<header>
+    <h1> Welcome to HAT </h1>
+    <nav>
+    <a href="#home" onclick="showContent('home')">Home</a>
+    <a href="#recorder" onclick="showContent('recorder')">Test Recorder</a>
+    <a href="#about" onclick="showContent('about')">About</a>
+</nav>
+</header>
+
+<section id="homeContent">
+     <div class="main-layout">
+        <div class="main-frame">
+            <div class="functional_buttons">
+                <button class="functional_button" id="hmi_connect_disconnect">Connect HMI</button>
+                <button class="functional_button" id="capture_screen">Image Capture</button>
+                <button class="functional_button" id="video_recording">Video Recorder</button>
+            </div>
+            <div class="right-column">
+                <div class="main-display" >
+                    <img id = "display_image" src="assets\hat_current_image.jpg">
+
+                </div>
+                <div class="keyboard">
+                    <div class="horizontal-buttons">
+                        <button class="horizontal-button" id="F2_KEY">&#9632;</button>
+                        <button class="horizontal-button" id="F1_KEY">&#9632;</button>
+                        <button class="horizontal-button" id="F3_KEY">&#9632;</button>
+                    </div>
+                    <div class="vertical-buttons">
+                        <div class="layout1">
+                            <button class="vertical-button" id="MMP_KEY">M+</button>
+                            <button class="vertical-button" id="GA_KEY">GA</button>
+                        </div>
+                        <div class="layout2">
+                            <button class="vertical-button" id="LEFT_KEY">&#9664;</button>
+                        </div>
+                        <div class="layout3">
+                            <button class="vertical-button" id="UP_KEY">&#9650;</button>
+                            <button class="vertical-button" id="CENTER_KEY">&#8226;</button>
+                            <button class="vertical-button" id="DOWN_KEY">&#9660;</button>
+                        </div>
+                        <div class="layout4">
+                            <button class="vertical-button" id="RIGHT_KEY">&#9654;</button>
+                        </div>
+                        <div class="layout5">
+                            <button class="vertical-button" id="DF_KEY">DF</button>
+                            <button class="vertical-button" id="CC_KEY">CC</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+</section>
+
+<section id="recorderContent" class="hidden">
+    <article id="recorderPopup">
+        <h2> Test Recorder </h2>
+        <div>
+            <span>
+            <button class="btn btn-wide" id="record"> Record </button>
+            <button class="btn btn-wide" id="stop"> Stop </button>
+            </span>
+            <span class="btn-thin">
+            <button class="btn" id="fullScreen" title="full screen capture"></button>
+            <button class="btn" id="cropScreen" title="crop screen"></button>
+            <button class="btn" id="save" title="download script"></button>
+            <button class="btn" id="upload" title="upload script"><input type="file" id="fileInput" accept=".robot, .txt" style="display: none;"></button>
+            <button class="btn" id="copy" title="copy to clipboard" data-clipboard-target="#robotScript"></button>
+            </span>
+            <span>
+            <textarea id="robotScript" required></textarea>
+            </span>
+            <button class="btn btn-wide" id="close" title="stop the recorder">Close</button>
+        </div>
+    </article>
+</section>
+
+<section id="aboutContent" class="hidden">
+    <article>
+        <h2> About </h2>
+        <p> This is About Section </p>
+    </article>
+    <article>
+        <h2> Help </h2>
+        <p> This is Help Section  </p>
+    </article>
+</section>
+
+<footer>
+    &copy; HAT Version
+</footer>
+
+<script type="text/javascript" src="navigation.js" ></script>
+<script type="text/javascript" src="test_recorder.js" ></script>
+<!--<script type="text/javascript" src="index.js" ></script>-->
+
+</body>
+</html>
+
