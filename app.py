@@ -130,8 +130,8 @@ class WebApplication:
         else:
             print("Error in loading application")
 
-    @staticmethod
-    def index():
+    @app.route('/')
+    def index(self):
         return render_template('index.html')
 
     def hmi_connect_handler(self):
