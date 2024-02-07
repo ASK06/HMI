@@ -126,7 +126,7 @@ class WebApplication:
     @staticmethod
     def run():
         if Setting.load_settings():
-            app.run(debug=True, port=9999)
+            app.run(debug=True)
         else:
             print("Error in loading application")
 
